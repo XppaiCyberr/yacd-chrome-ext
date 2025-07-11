@@ -2,6 +2,12 @@
 
 A Chrome extension version of **Yet Another Clash Dashboard** (Yacd) that provides a convenient browser-based interface for managing Clash proxy clients.
 
+## 📸 Screenshot
+
+![Yacd Chrome Extension Screenshot](screenshot/ss.png)
+
+*The Yacd dashboard running as a Chrome extension with real-time traffic monitoring and proxy management interface.*
+
 ## 🚀 Features
 
 - **Dashboard Interface**: Clean, modern UI for managing Clash proxy configurations
