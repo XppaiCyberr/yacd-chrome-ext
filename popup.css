@@ -1,0 +1,97 @@
+/* Chrome Extension Popup Styles */
+body {
+  width: 900px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Ensure the app fills the popup */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Extension-specific sidebar adjustments */
+.sidebar {
+  width: 200px;
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+/* Make content area more compact for extension */
+.content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+/* Compact header for extension */
+.content-header {
+  margin-bottom: 16px;
+}
+
+/* Adjust chart containers for extension */
+.chart-container {
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+/* Traffic stats adjustments */
+.traffic-now {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.traffic-now > div {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* Responsive adjustments for smaller popup */
+@media (max-width: 800px) {
+  body {
+    width: 700px;
+    height: 600px;
+  }
+  
+  .sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+  
+  .content {
+    padding: 12px;
+  }
+}
+
+/* Fix for potential scrolling issues */
+html, body {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Ensure modals work properly in extension */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+} 

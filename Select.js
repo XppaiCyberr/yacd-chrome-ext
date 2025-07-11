@@ -1,0 +1,1 @@
+import{b as e}from"./popup.js";const n="_select_gfkcv_1";function o({options:o,selected:s,onChange:t,...a}){return e("select",{className:n,value:s,onChange:t,...a,children:o.map(([n,o])=>e("option",{value:n,children:o},n))})}export{o as S};

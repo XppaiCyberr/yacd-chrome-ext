@@ -1,0 +1,1 @@
+import{x as e}from"./popup.js";const{useState:t,useRef:n,useCallback:o,useLayoutEffect:s}=e;function i(){const e=n(null),[i,r]=t(200),u=o(()=>{const{top:t}=e.current.getBoundingClientRect();r(window.innerHeight-t)},[]);return s(()=>(u(),window.addEventListener("resize",u),()=>{window.removeEventListener("resize",u)}),[u]),[e,i]}export{i as u};

@@ -1,0 +1,1 @@
+import{b as t,T as e,R as u}from"./popup.js";const{useState:a,useRef:n,useEffect:s,useCallback:r}=u;function c(u){return t("input",{className:e.input,...u})}function o({value:u,...c}){const[o,p]=a(u),i=n(u);s(()=>{i.current!==u&&p(u),i.current=u},[u]);const l=r(t=>p(t.target.value),[p]);return t("input",{className:e.input,value:o,onChange:l,...c})}export{c as I,o as S};
